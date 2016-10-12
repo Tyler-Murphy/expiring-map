@@ -16,5 +16,10 @@
     "limit"
   ],
   "author": "Tyler Murphy <tylermurphyj@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tyler-Murphy/expiring-map"
+  },
+  "bugs": "https://github.com/Tyler-Murphy/expiring-map/issues"
 }
