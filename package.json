@@ -1,0 +1,20 @@
+{
+  "name": "expiring_map",
+  "version": "1.0.0",
+  "description": "An extension to es6 Maps that allows for map-level and key-level expiration times",
+  "main": "expiring_map.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "map",
+    "es6",
+    "expire",
+    "expiration",
+    "timeout",
+    "time",
+    "limit"
+  ],
+  "author": "Tyler Murphy <tylermurphyj@gmail.com>",
+  "license": "ISC"
+}
