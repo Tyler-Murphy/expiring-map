@@ -1,6 +1,6 @@
 {
   "name": "expiring_map",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An extension to es6 Maps that allows for map-level and key-level expiration times",
   "main": "expiring_map.js",
   "scripts": {
