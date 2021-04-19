@@ -6,6 +6,8 @@ class ExpiringMap extends Map {
   }
 
   set (key, value, timeoutMs) {
+    this.delete(key) // make sure pending timeouts are removed
+
     let timeout = timeoutMs || this.defaultTimeoutMs
 
     if (timeout) {

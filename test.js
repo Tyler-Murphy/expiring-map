@@ -82,6 +82,21 @@ tests.push((() => {
   .then(() => assert.notExpired(map, 1))
 })())
 
+// Entries with an expiration that aren't explicitly deleted but are replaced by a new entry with the same key and no expiration are never removed in maps without a default
+tests.push((() => {
+  let expiration = 100
+  let map = new ExpiringMap()
+
+  map.set(1, 1, expiration)
+
+  return delay(0)
+    .then(() => {
+      map.set(1, 1)
+    })
+    .then(() => delay(expiration * 2))
+    .then(() => assert.notExpired(map, 1))
+})())
+
 // Entries with an expiration that are deleted by clearing the map and then
 // replaced by a new entry with the same key but no expiration are never
 // removed in maps without a default
